@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B74F1F81680AA32002CFB4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B74F1F71680AA32002CFB4A /* QuartzCore.framework */; };
+		2B8C8D6116888BA2009F4DEE /* Crysta_number.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B8C8D6016888BA2009F4DEE /* Crysta_number.ttf */; };
 		2BB24E77167F589700D80ACA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB24E76167F589700D80ACA /* UIKit.framework */; };
 		2BB24E79167F589700D80ACA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB24E78167F589700D80ACA /* Foundation.framework */; };
 		2BB24E7B167F589700D80ACA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB24E7A167F589700D80ACA /* CoreGraphics.framework */; };
@@ -19,9 +21,16 @@
 		2BB24E90167F589700D80ACA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB24E8E167F589700D80ACA /* MainStoryboard_iPhone.storyboard */; };
 		2BB24E93167F589700D80ACA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB24E91167F589700D80ACA /* MainStoryboard_iPad.storyboard */; };
 		2BB24E96167F589700D80ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB24E95167F589700D80ACA /* ViewController.m */; };
+		2BB24E9E167F5AD700D80ACA /* GPSUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB24E9D167F5AD700D80ACA /* GPSUIViewController.m */; };
+		2BB24EA0167F5BAC00D80ACA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB24E9F167F5BAC00D80ACA /* CoreLocation.framework */; };
+		2BB24EA3167F644500D80ACA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB24EA2167F644500D80ACA /* Icon.png */; };
+		2BE7CA2C168741F800587CE2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7CA2B168741F800587CE2 /* NavigationViewController.m */; };
+		2BE7CA2F1687427D00587CE2 /* SpeedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7CA2E1687427D00587CE2 /* SpeedUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B74F1F71680AA32002CFB4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2B8C8D6016888BA2009F4DEE /* Crysta_number.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crysta_number.ttf; sourceTree = "<group>"; };
 		2BB24E72167F589700D80ACA /* MyGPSLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGPSLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB24E76167F589700D80ACA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BB24E78167F589700D80ACA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +48,15 @@
 		2BB24E92167F589700D80ACA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		2BB24E94167F589700D80ACA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2BB24E95167F589700D80ACA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BB24E9C167F5AD700D80ACA /* GPSUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSUIViewController.h; sourceTree = "<group>"; };
+		2BB24E9D167F5AD700D80ACA /* GPSUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSUIViewController.m; sourceTree = "<group>"; };
+		2BB24E9F167F5BAC00D80ACA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2BB24EA1167F627D00D80ACA /* linmsdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linmsdebug.h; sourceTree = "<group>"; };
+		2BB24EA2167F644500D80ACA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2BE7CA2A168741F800587CE2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		2BE7CA2B168741F800587CE2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		2BE7CA2D1687427D00587CE2 /* SpeedUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedUIView.h; sourceTree = "<group>"; };
+		2BE7CA2E1687427D00587CE2 /* SpeedUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B74F1F81680AA32002CFB4A /* QuartzCore.framework in Frameworks */,
+				2BB24EA0167F5BAC00D80ACA /* CoreLocation.framework in Frameworks */,
 				2BB24E77167F589700D80ACA /* UIKit.framework in Frameworks */,
 				2BB24E79167F589700D80ACA /* Foundation.framework in Frameworks */,
 				2BB24E7B167F589700D80ACA /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +95,8 @@
 		2BB24E75167F589700D80ACA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B74F1F71680AA32002CFB4A /* QuartzCore.framework */,
+				2BB24E9F167F5BAC00D80ACA /* CoreLocation.framework */,
 				2BB24E76167F589700D80ACA /* UIKit.framework */,
 				2BB24E78167F589700D80ACA /* Foundation.framework */,
 				2BB24E7A167F589700D80ACA /* CoreGraphics.framework */,
@@ -85,9 +107,16 @@
 		2BB24E7C167F589700D80ACA /* MyGPSLocation */ = {
 			isa = PBXGroup;
 			children = (
+				2BE7CA2A168741F800587CE2 /* NavigationViewController.h */,
+				2BE7CA2B168741F800587CE2 /* NavigationViewController.m */,
+				2BB24EA1167F627D00D80ACA /* linmsdebug.h */,
 				2BB24E85167F589700D80ACA /* AppDelegate.h */,
 				2BB24E86167F589700D80ACA /* AppDelegate.m */,
 				2BB24E8E167F589700D80ACA /* MainStoryboard_iPhone.storyboard */,
+				2BE7CA2D1687427D00587CE2 /* SpeedUIView.h */,
+				2BE7CA2E1687427D00587CE2 /* SpeedUIView.m */,
+				2BB24E9C167F5AD700D80ACA /* GPSUIViewController.h */,
+				2BB24E9D167F5AD700D80ACA /* GPSUIViewController.m */,
 				2BB24E91167F589700D80ACA /* MainStoryboard_iPad.storyboard */,
 				2BB24E94167F589700D80ACA /* ViewController.h */,
 				2BB24E95167F589700D80ACA /* ViewController.m */,
@@ -99,6 +128,8 @@
 		2BB24E7D167F589700D80ACA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B8C8D6016888BA2009F4DEE /* Crysta_number.ttf */,
+				2BB24EA2167F644500D80ACA /* Icon.png */,
 				2BB24E7E167F589700D80ACA /* MyGPSLocation-Info.plist */,
 				2BB24E7F167F589700D80ACA /* InfoPlist.strings */,
 				2BB24E82167F589700D80ACA /* main.m */,
@@ -167,6 +198,8 @@
 				2BB24E8D167F589700D80ACA /* Default-568h@2x.png in Resources */,
 				2BB24E90167F589700D80ACA /* MainStoryboard_iPhone.storyboard in Resources */,
 				2BB24E93167F589700D80ACA /* MainStoryboard_iPad.storyboard in Resources */,
+				2BB24EA3167F644500D80ACA /* Icon.png in Resources */,
+				2B8C8D6116888BA2009F4DEE /* Crysta_number.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +213,9 @@
 				2BB24E83167F589700D80ACA /* main.m in Sources */,
 				2BB24E87167F589700D80ACA /* AppDelegate.m in Sources */,
 				2BB24E96167F589700D80ACA /* ViewController.m in Sources */,
+				2BB24E9E167F5AD700D80ACA /* GPSUIViewController.m in Sources */,
+				2BE7CA2C168741F800587CE2 /* NavigationViewController.m in Sources */,
+				2BE7CA2F1687427D00587CE2 /* SpeedUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +304,18 @@
 		2BB24E9A167F589700D80ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MyGPSLocation/ios/framework/GoogleMaps-1.0.1\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyGPSLocation/MyGPSLocation-Prefix.pch";
 				INFOPLIST_FILE = "MyGPSLocation/MyGPSLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MyGPSLocation/ios/font/ttfedit-1.0a-bin\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,9 +324,18 @@
 		2BB24E9B167F589700D80ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MyGPSLocation/ios/framework/GoogleMaps-1.0.1\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyGPSLocation/MyGPSLocation-Prefix.pch";
 				INFOPLIST_FILE = "MyGPSLocation/MyGPSLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MyGPSLocation/ios/font/ttfedit-1.0a-bin\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,6 +360,7 @@
 				2BB24E9B167F589700D80ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
