@@ -21,15 +21,35 @@
     if (self) {
         // Custom initialization
     }
+    
+
+    
     return self;
 }
+
 
 - (void)viewDidLoad
 {
     linmspl();
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
         
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    navigationEngine = (NavigationEngine*)[[NavigationEngine alloc] init];
+    speedChangeListener1 = (SpeedChangeListener*)[[SpeedChangeListener alloc] init];
+    speedChangeListener2 = (SpeedChangeListener*)[[SpeedChangeListener alloc] init];
+    
+    speedChangeListener1.name = @"1st";
+    speedChangeListener2.name = @"2nd";
+    
+    navigationEngine.speedChangeDelegate = speedChangeListener1;
+    navigationEngine.speedChangeDelegate = speedChangeListener2;
+    
+    [navigationEngine speedChange];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,19 +61,19 @@
 // orientation for ios6
 - (BOOL) shouldAutorotate
 {
-    linmspl();
+
     return YES;
 }
 
 -(NSUInteger)supportedInterfaceOrientations
 {
-    linmspl();
+
     return UIInterfaceOrientationMaskLandscapeLeft;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    linmspl();
+
     return UIInterfaceOrientationLandscapeLeft;
 }
 // end of orientation for ios 6
@@ -62,10 +82,20 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    linmspl();
+
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
 }
 // end of orientation for ios5 or earier
 
+- (IBAction)SwitchBackToMainMenu:(id)sender {
+    linmspl();
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+}
+- (void)viewDidUnload {
+    [self setSpeedUIView:nil];
+    [self setNavigationUIView:nil];
+    [super viewDidUnload];
+}
 @end

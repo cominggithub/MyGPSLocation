@@ -24,6 +24,8 @@
 		2BB24E9E167F5AD700D80ACA /* GPSUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB24E9D167F5AD700D80ACA /* GPSUIViewController.m */; };
 		2BB24EA0167F5BAC00D80ACA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB24E9F167F5BAC00D80ACA /* CoreLocation.framework */; };
 		2BB24EA3167F644500D80ACA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BB24EA2167F644500D80ACA /* Icon.png */; };
+		2BC7BACE1689E672008E953C /* NavigationEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7BACD1689E672008E953C /* NavigationEngine.m */; };
+		2BC7BAD61689EEB4008E953C /* SpeedChangeListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC7BAD51689EEB4008E953C /* SpeedChangeListener.m */; };
 		2BE7CA2C168741F800587CE2 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7CA2B168741F800587CE2 /* NavigationViewController.m */; };
 		2BE7CA2F1687427D00587CE2 /* SpeedUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE7CA2E1687427D00587CE2 /* SpeedUIView.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,10 @@
 		2BB24E9F167F5BAC00D80ACA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2BB24EA1167F627D00D80ACA /* linmsdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linmsdebug.h; sourceTree = "<group>"; };
 		2BB24EA2167F644500D80ACA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		2BC7BACC1689E672008E953C /* NavigationEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationEngine.h; sourceTree = "<group>"; };
+		2BC7BACD1689E672008E953C /* NavigationEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationEngine.m; sourceTree = "<group>"; };
+		2BC7BAD41689EEB4008E953C /* SpeedChangeListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedChangeListener.h; sourceTree = "<group>"; };
+		2BC7BAD51689EEB4008E953C /* SpeedChangeListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedChangeListener.m; sourceTree = "<group>"; };
 		2BE7CA2A168741F800587CE2 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		2BE7CA2B168741F800587CE2 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		2BE7CA2D1687427D00587CE2 /* SpeedUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedUIView.h; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 				2BB24E91167F589700D80ACA /* MainStoryboard_iPad.storyboard */,
 				2BB24E94167F589700D80ACA /* ViewController.h */,
 				2BB24E95167F589700D80ACA /* ViewController.m */,
+				2BC7BACC1689E672008E953C /* NavigationEngine.h */,
+				2BC7BACD1689E672008E953C /* NavigationEngine.m */,
+				2BC7BAD41689EEB4008E953C /* SpeedChangeListener.h */,
+				2BC7BAD51689EEB4008E953C /* SpeedChangeListener.m */,
 				2BB24E7D167F589700D80ACA /* Supporting Files */,
 			);
 			path = MyGPSLocation;
@@ -216,6 +226,8 @@
 				2BB24E9E167F5AD700D80ACA /* GPSUIViewController.m in Sources */,
 				2BE7CA2C168741F800587CE2 /* NavigationViewController.m in Sources */,
 				2BE7CA2F1687427D00587CE2 /* SpeedUIView.m in Sources */,
+				2BC7BACE1689E672008E953C /* NavigationEngine.m in Sources */,
+				2BC7BAD61689EEB4008E953C /* SpeedChangeListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

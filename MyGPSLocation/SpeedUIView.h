@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "linmsdebug.h"
 
-@interface SpeedUIView : UIView
+@interface SpeedUIView : UIView <CLLocationManagerDelegate>
 
 @end

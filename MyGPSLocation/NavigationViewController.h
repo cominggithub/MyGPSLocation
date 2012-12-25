@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpeedUIView.h"
+#import "NavigationEngine.h"
+#import "SpeedChangeListener.h"
 #import "linmsdebug.h"
 
 @interface NavigationViewController : UIViewController
+{
+    NavigationEngine *navigationEngine;
+    SpeedChangeListener *speedChangeListener1;
+    SpeedChangeListener *speedChangeListener2;
+}
+- (IBAction)SwitchBackToMainMenu:(id)sender;
+@property (weak, nonatomic) IBOutlet SpeedUIView *SpeedUIView;
+@property (weak, nonatomic) IBOutlet SpeedUIView *NavigationUIView;
 
 @end
