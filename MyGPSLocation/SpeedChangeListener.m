@@ -16,4 +16,9 @@
 {
     NSLog(@"%@ updateKMHSpeed\n", [self name]);
 }
+
+-(void)updateSpeed:(double)speed1 speed2:(double)speed2 speed3:(double)speed3
+{
+    NSLog(@"%@ support updateSpeed with 3 parameter", [self name]);
+}
 @end

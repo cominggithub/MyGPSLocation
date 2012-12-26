@@ -10,6 +10,7 @@
 #define Ratings_linmsdebug_h
 
 #define linmspl() NSLog(@"%s(%d)\n", __FUNCTION__, __LINE__)
+#define linmsfns(args...) do{NSLog(@"%s(%d): ", __FUNCTION__, __LINE__); NSLog(args);}while(0)
 
 
 #endif

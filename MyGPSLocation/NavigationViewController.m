@@ -14,20 +14,34 @@
 
 @implementation NavigationViewController
 
+@synthesize SpeedUIView=_SpeedUIView;
+@synthesize NavigationUIView=_NavigationUIView;
+@synthesize SpeedLabel=_SpeedLabel;
+@synthesize SpeedUnitLabel=_SpeedUnitLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     linmspl();
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
     }
-    
-
     
     return self;
 }
 
-
+- (id) init
+{
+    if (self = [super init])
+    {
+        navigationEngine = (NavigationEngine*)[[NavigationEngine alloc] init];
+        
+        [navigationEngine registerNavigationEngineSpeedChangeEvent:self];
+    }
+    
+    return self;
+}
 - (void)viewDidLoad
 {
     linmspl();
@@ -39,17 +53,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    navigationEngine = (NavigationEngine*)[[NavigationEngine alloc] init];
-    speedChangeListener1 = (SpeedChangeListener*)[[SpeedChangeListener alloc] init];
-    speedChangeListener2 = (SpeedChangeListener*)[[SpeedChangeListener alloc] init];
-    
-    speedChangeListener1.name = @"1st";
-    speedChangeListener2.name = @"2nd";
-    
-    navigationEngine.speedChangeDelegate = speedChangeListener1;
-    navigationEngine.speedChangeDelegate = speedChangeListener2;
-    
-    [navigationEngine speedChange];
+   
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,6 +101,28 @@
 - (void)viewDidUnload {
     [self setSpeedUIView:nil];
     [self setNavigationUIView:nil];
+    [self setSpeedLabel:nil];
+    [self setSpeedUnitLabel:nil];
     [super viewDidUnload];
 }
+
+-(void)updateKMHSpeed:(double)speed
+{
+    if (distanceUnit == METER)
+    {
+        self.SpeedLabel.text = [NSString stringWithFormat:@"%.0f", speed];
+        self.SpeedUnitLabel.text = @"km/h";
+    }
+}
+
+-(void)updateMHSpeed:(double)speed
+{
+    if (distanceUnit == MILE)
+    {
+        self.SpeedLabel.text = [NSString stringWithFormat:@"%.0f", speed];
+        self.SpeedUnitLabel.text = @"mph";
+    }
+}
+
+
 @end

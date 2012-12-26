@@ -12,14 +12,24 @@
 #import "SpeedChangeListener.h"
 #import "linmsdebug.h"
 
-@interface NavigationViewController : UIViewController
+typedef enum {
+    METER,
+    MILE
+} DistanceUnit;
+
+@interface NavigationViewController : UIViewController<NavigationEngineSpeedChangeDelegate>
 {
     NavigationEngine *navigationEngine;
-    SpeedChangeListener *speedChangeListener1;
-    SpeedChangeListener *speedChangeListener2;
+    DistanceUnit distanceUnit;
 }
 - (IBAction)SwitchBackToMainMenu:(id)sender;
 @property (weak, nonatomic) IBOutlet SpeedUIView *SpeedUIView;
 @property (weak, nonatomic) IBOutlet SpeedUIView *NavigationUIView;
+@property (weak, nonatomic) IBOutlet UILabel *SpeedLabel;
+@property (weak, nonatomic) IBOutlet UILabel *SpeedUnitLabel;
+
+-(void)updateKMHSpeed:(double)speed;
+-(void)updateMHSpeed:(double)speed;
+
 
 @end
